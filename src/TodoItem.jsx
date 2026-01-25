@@ -4,9 +4,13 @@ import "./TodoItem.css"
 function TodoItem(props){
     return (
         <li className="ti-todoitem">
-            <span className={`ti-icon ti-icon-check ${props.completed && "ti-icon-check-completed"}`}>X</span>
+            <span className={`ti-icon ti-icon-check ${props.completed && "ti-icon-check-completed"}`}
+            onClick={props.onCompleted}
+            >X</span>
             <p className={`ti-todoitem-p ${props.completed && "ti-todoitem-p--completed"}`}>{props.text}</p>
-            <span className={`ti-icon ti-icon-delete`}>V</span>
+            <span className={`ti-icon ti-icon-delete`}
+            onClick={props.onDelete}
+            >V</span>
         </li>
     )
 }
