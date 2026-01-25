@@ -1,0 +1,41 @@
+.ti-icon {
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.ti-icon-check {
+  position: relative;
+  left: .60rem;
+}
+
+.ti-icon-check:hover .ti-icon-svg{
+  fill: #c084fc;
+  transform: scale(1.25);
+}
+
+.ti-icon-check-completed {
+  transform: scale(1.15);
+}
+
+.ti-icon-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.ti-icon-delete {
+  position: absolute;
+  font-size: 1.5rem;
+  top: -24px;
+  right: 10px;
+}
+.ti-icon-delete:hover .ti-icon-svg{
+  fill: #df4494;
+  transform: scale(1.25);
+}

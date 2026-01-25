@@ -20,6 +20,7 @@
   );
   box-shadow: 0px 6px 30px rgba(164, 80, 139, 0.35);
 }
+
 .ti-todoitem-p {
   margin: 0 0 0 1.2rem;
   font-size: 18px;
@@ -35,66 +36,4 @@
   text-decoration: line-through;
   color: #b985d6;
   opacity: 0.8;
-}
-
-.ti-icon-check {
-  position: relative;
-  color: #6b6b6b;
-  left: .60rem;
-}
-.ti-icon-check:hover{
-color: #c084fc;
-transform: scale(1.25);
-}
-
-.ti-icon-check-completed {
-  color: #c084fc;
-  transform: scale(1.15);
-}
-
-.ti-icon {
-  cursor: pointer;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.ti-icon-delete {
-  position: absolute;
-  font-size: 1.5rem;
-  top: -18px;
-  right: 10px;
-  color: #6b6b6b;
-}
-.ti-icon-delete:hover {
-  color: #df4494;
-  transform: scale(1.25);
-}
-
-
-
-
-
-.Icon-container-delete {
-  position: absolute;
-  font-size: 1.5rem;
-  top: -24px;
-  right: 0;
-}
-
-.Icon-container-delete .Icon-svg {
-  color: #a4508b;
-  transition: 0.3s ease;
-}
-
-.Icon-svg svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    transition: 0.3s ease;
-    fill: currentColor;
 }
