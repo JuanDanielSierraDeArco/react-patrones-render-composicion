@@ -30,17 +30,17 @@ function App() {
     return todoText.includes(searchtext);
   });
 
-  console.log("log 1");
+  // console.log("log 1");
+  // // React.useEffect(()=>{
+  // //   console.log("log 2");
+  // // },)
+  // // React.useEffect(()=>{
+  // //   console.log("log 2");
+  // // },[])
   // React.useEffect(()=>{
-  //   console.log("log 2");
-  // },)
-  // React.useEffect(()=>{
-  //   console.log("log 2");
-  // },[])
-  React.useEffect(()=>{
-    console.log("looooooooooooog 2");
-  },[totalTodos])
-  console.log("log 3");
+  //   console.log("looooooooooooog 2");
+  // },[totalTodos])
+  // console.log("log 3");
 
 
   const completeTodo = (text) => {

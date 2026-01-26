@@ -3,6 +3,9 @@ import { TodoCounter } from "../TodoCounter/TodoCounter";
 import { TodoItem } from "../TodoItem/TodoItem";
 import { TodoList } from "../TodoList/TodoList";
 import { TodoSearch } from "../TodoSearch/TodoSearch";
+import { TodoLoading } from "./TodoLoading";
+import { TodoError } from "./TodoError";
+import { TodoEmpty } from "./TodoEmpty";
 import "./AppUI.css";
 
 function AppUI({
@@ -21,25 +24,42 @@ function AppUI({
       <TodoCounter completed={completedtodos} total={totalTodos} />
       <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       <TodoList>
-        {loading && !error && <p>Estamos cargando</p>}
-        {!loading && error && <p>Error del servidor</p>}
-        {(!loading && !error && totalTodos === 0) && <p>Crea tu primer todo</p>}
-        {(!loading && !error && totalTodos !== 0) && searchedTodos.map(({ text, completed }) => {
-          return (
-            <TodoItem
-              key={text}
-              text={text}
-              completed={completed}
-              value={text}
-              onCompleted={() => completeTodo(text)}
-              onDelete={() => deleteTodo(text)}
-            />
-          );
-        })}
+        {loading && !error && (
+          <>
+            <TodoLoading />
+            <TodoLoading />
+            <TodoLoading />
+            <TodoLoading />
+          </>
+        )}
+        {!loading && error && (
+          <>
+            <TodoError />
+            <TodoError />
+            <TodoError />
+            <TodoError />
+          </>
+        )}
+        {!loading && !error && totalTodos === 0 && <TodoEmpty />}
+        {!loading &&
+          !error &&
+          totalTodos !== 0 &&
+          searchedTodos.map(({ text, completed }) => {
+            return (
+              <TodoItem
+                key={text}
+                text={text}
+                completed={completed}
+                value={text}
+                onCompleted={() => completeTodo(text)}
+                onDelete={() => deleteTodo(text)}
+              />
+            );
+          })}
       </TodoList>
       <CreateTodoButton />
     </div>
   );
 }
 
-export {AppUI}
+export { AppUI };
