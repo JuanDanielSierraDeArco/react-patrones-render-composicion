@@ -1,16 +1,81 @@
-# React + Vite
+# 📝 App Task – Lista de Tareas con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web de lista de tareas desarrollada con **React + Vite**, enfocada en aplicar buenas prácticas de desarrollo frontend como separación de responsabilidades, manejo de estado global y persistencia de datos en el navegador.
 
-Currently, two official plugins are available:
+Este proyecto forma parte de mi proceso de aprendizaje en React y sirve como base para profundizar en **patrones de render y composición**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Demo
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+👉 https://juandanielsierrarearco.github.io/proyecto-react-intro-app-task/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías utilizadas
+
+- ⚛️ React  
+- ⚡ Vite  
+- 🎨 CSS Modules  
+- 📦 Context API  
+- 🪝 Custom Hooks  
+- 💾 LocalStorage  
+- 🌐 GitHub Pages  
+
+---
+
+## ✨ Funcionalidades
+
+- Crear nuevas tareas  
+- Marcar tareas como completadas  
+- Eliminar tareas  
+- Buscar tareas por nombre  
+- Persistencia de datos usando LocalStorage  
+- Renderizado condicional para estados:
+  - Cargando  
+  - Error  
+  - Lista vacía  
+- Uso de modal para creación de tareas  
+
+---
+
+## 🧠 Arquitectura y conceptos aplicados
+
+- Separación de lógica y presentación (UI Components)
+- Manejo de estado global con Context API
+- Custom Hook (`useLocalStorage`) para persistencia
+- Componentes reutilizables
+- Organización del proyecto por responsabilidad
+- Patrones de renderizado condicional
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+src/
+├── App.jsx
+├── main.jsx
+├── assets/
+│   ├── icons/
+│   │   ├── check.svg
+│   │   └── delete.svg
+│   └── images/
+│       └── react.svg
+├── components/
+│   ├── CreateTodoButton/
+│   ├── Modal/
+│   ├── TodoCounter/
+│   ├── TodoForm/
+│   ├── TodoIcon/
+│   ├── TodoItem/
+│   ├── TodoList/
+│   ├── TodoSearch/
+│   └── ui/
+├── context/
+│   └── TodoContext.jsx
+├── hooks/
+│   └── useLocalStorage.jsx
+└── styles/
+    └── App.css
+
