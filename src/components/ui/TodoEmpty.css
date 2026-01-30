@@ -20,6 +20,7 @@
   margin: 0.25rem 0 0;
   color: #eaeaea;
   font-weight: 600;
+  word-break: break-word;
 }
 .tey-subtitle{
   margin: 0;

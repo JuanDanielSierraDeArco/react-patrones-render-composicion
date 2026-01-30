@@ -17,3 +17,6 @@
   color: #ebd4d4;
   transform: translateY(-5px);
 }
+.tc-todocounter--loading{
+  opacity: 25%;
+}

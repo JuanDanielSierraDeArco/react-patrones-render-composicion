@@ -21,3 +21,6 @@
 .ts-todosearch::placeholder{
   color: #9873b9;
 }
+.ts-todosearch:disabled{
+  opacity: 25%;
+}
