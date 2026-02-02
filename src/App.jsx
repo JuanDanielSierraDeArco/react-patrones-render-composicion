@@ -11,6 +11,7 @@ import { Modal } from "./components/Modal/Modal";
 import { TodoForm } from "./components/TodoForm/TodoForm";
 import { TodoHeader } from "./components/TodoHeader/TodoHeader";
 import { TodoEmptyResult } from "./components/ui/TodoEmptyResult";
+import { ChangeAlert } from "./components/ChangeAlert/ChangeAlert"
 import { useTodos } from "./hooks/useTodos";
 import "./styles/App.css";
 
@@ -28,6 +29,7 @@ function App() {
     searchValue,
     setSearchValue,
     addTodo,
+    sincronizeTodos,
   } = useTodos();
   return (
     <div className="a-container">
@@ -76,6 +78,8 @@ function App() {
           />
         </Modal>
       )}
+      <ChangeAlert
+      sincronize = {sincronizeTodos}/>
     </div>
   );
 }
