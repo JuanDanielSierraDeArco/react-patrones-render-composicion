@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JuanDanielSierraDeArco.github.io/proyecto-react-intro-app-task",
+  "homepage": "https://juandanielsierrarearco.github.io/react-patrones-render-composicion",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

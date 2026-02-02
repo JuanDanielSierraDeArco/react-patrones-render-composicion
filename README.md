@@ -1,9 +1,8 @@
 # 📝 App Task – Lista de Tareas con React
 
-Aplicación web de lista de tareas desarrollada con **React + Vite**, enfocada en aplicar buenas prácticas de desarrollo frontend como separación de responsabilidades, manejo de estado global y persistencia de datos en el navegador.
+Aplicación web de lista de tareas desarrollada con React + Vite, enfocada en la aplicación práctica de patrones de render y composición, buenas prácticas de arquitectura frontend y manejo de estado compartido.
 
-Este proyecto forma parte de mi proceso de aprendizaje en React y sirve como base para profundizar en **patrones de render y composición**.
-
+Este proyecto forma parte de mi proceso de aprendizaje en React, aplicando conceptos avanzados como Render Props, Higher-Order Components (HOC), composición de componentes y separación clara entre lógica y presentación.
 ---
 
 ## 🚀 Demo
